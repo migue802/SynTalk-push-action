@@ -1,0 +1,25 @@
+name: 'Syntalk Push action'
+description: 'Change roadmap in trello'
+inputs:
+  targetList:  # id of input
+    description: 'Where are the cards'
+    required: true
+    default: 'undefined'
+  destinationList:  # id of input
+    description: 'Where card needs to be copied'
+    required: true
+    default: 'undefined'
+  key:  # id of input
+    description: 'Trello API key'
+    required: true
+    default: 'undefined'
+  token:  # id of input
+    description: 'Trello API token'
+    required: true
+    default: 'undefined'
+outputs:
+  time: # id of output
+    description: 'idk'
+runs:
+  using: 'node12'
+  main: 'index.js'
