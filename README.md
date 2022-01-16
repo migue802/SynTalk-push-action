@@ -9,7 +9,7 @@ Repository executed on Syntalk's private repo. It basically executes a JavaScrip
 First of all, you need to make a workflow script where the script is executed.
 Note: Script must run on `ubuntu-latest`
 
-1st.- Create a file called `custom.yml`
+1- Create a file called `custom.yml`
 
 Example:
 ```
@@ -35,3 +35,5 @@ jobs:
           key: ${{ secrets.TRELLOKEY }}
           token: ${{ secrets.TRELLOTOKEN }}
 ```
+
+2- Replace `targetList` and `destinationList` on the script
